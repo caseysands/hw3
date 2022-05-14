@@ -20,4 +20,11 @@ class PostsController < ApplicationController
         @post.save
         redirect_to "/places/#{@post["place_id"]}"
     end
+
+    # def destroy
+      #  @post = Post.find_by({"id" => params["id"]})
+       # place = Place.find_by({"id" => @post["place_id"]})
+        #@post.destroy
+        #redirect_to "/places/#{place["id"]}"
+    #end
 end

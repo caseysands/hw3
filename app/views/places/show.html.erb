@@ -6,6 +6,7 @@
 <% for post in @posts %>
  <br> <p>  <h2> <%= post["title"] %> </h2>  <h3> <%= post["posted_on"] %></h3>
     <p> <%= post["description"] %></p>
+  <!-- <p> <%= button_to "Delete This Post", post, method: :delete %> </p>-->
     <% end %>
     </ul>
 </p>
